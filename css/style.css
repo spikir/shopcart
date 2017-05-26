@@ -1,0 +1,107 @@
+body{
+	background-color: #ccc;
+	font-family: Arial, Sans-Serif;
+	color: #564b47;
+	padding: 20px;
+	margin: 0;
+}
+
+#wrapper{
+	width: 75%;
+	height: auto;
+	margin: auto;
+	border-style: solid;
+	border-radius: 25px;
+	background-color: white;
+}
+
+#header {
+	width: 100%;
+	height: 25%;
+	text-align: center;
+	border-bottom: 1px solid #666;
+}
+
+#content {
+	width: 100%;
+	height: 75%;
+	float: left;
+}
+
+#menu {
+	width: 20%;
+	height: 50%;
+	float: left;
+}
+
+#article {
+	width: 55%;
+	height: 100%;
+	float: left;
+}
+
+#login {
+	width: 23%;
+	height: 20%;
+	float: left;
+	text-align: right;
+	padding: 1%;
+}	
+
+#formRegister {
+	width: 45%;
+	padding: 1%;
+	margin: auto;
+	text-align: right;
+}
+
+#footer {
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	padding: 1%;
+	border-top: 1px solid #666;
+	clear: both;
+}
+
+#registerUsername  {
+	padding: 1%;
+}
+
+#registerPassword {
+	padding: 1%;
+}
+
+#registerEmail  {
+	padding: 1%;
+}
+
+#shopping_cart {
+	text-align: left;
+}
+
+#formPlaceOrder {
+	padding: 1%;
+	height: auto;
+}
+
+.buttons {
+	padding: 1%;
+}
+
+.buttons input[type="submit"] {
+	background-color: #2CBBBB;
+	border: 1px solid #27A0A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 1%;
+	text-decoration: none;
+	text-transform: none;
+}
+
+a  {
+	text-decoration: none;
+}
