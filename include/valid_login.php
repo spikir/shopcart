@@ -5,7 +5,6 @@
 	$password = trim(mysqli_escape_string($conn,$_POST['inputPassword']));
 	
 	$query_verify_user = "SELECT user_id, user_username, user_password FROM users WHERE user_username = '$username'";
-	echo $query_verify_user;
 	
 	$result = mysqli_query($conn, $query_verify_user);
 	  

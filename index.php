@@ -18,17 +18,11 @@
 				<div id="article">
 					<?php include "include/content.php" ?>
 				</div>
-				<div id="login">
+				<div id="rightbox">
 					<?php
 						include ("include/shopping_cart.php");
 						if(isset($_SESSION['user_id'])) {
-							echo '<div class="buttons">';
-								echo "Logged in!";
-								echo '<br>';
-								echo '<form action="include/logout.php" method="POST">';
-									echo '<input type="submit" name="submitButton" value="Logout"/>';
-								echo '</form>';
-							echo '</div>';
+							include ("include/profile.php");
 						} else {
 							include "include/login.php";
 						}

@@ -1,17 +1,5 @@
 <?php
-	//include ('db.php');
-	
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	
-	$conn = new mysqli($servername, $username, $password);
-	
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}
-	
-	mysqli_select_db($conn, 'cart');
+	include ('include/db.php');
 	
 	$query_products = "SELECT product_id, product_name, product_desc, product_price FROM products ORDER BY product_id ASC";
 	

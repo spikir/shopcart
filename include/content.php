@@ -50,6 +50,14 @@
 			case 'checkout';
 				include ('view_cart.php');
 				break;
+				
+			case 'vieworders';
+				include ('view_orders.php');
+				break;
+			
+			case 'viewprofile';
+				include ('view_profile.php');
+				break;
 		}
 	}
 ?>

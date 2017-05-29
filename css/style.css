@@ -40,7 +40,7 @@ body{
 	float: left;
 }
 
-#login {
+#rightbox {
 	width: 23%;
 	height: 20%;
 	float: left;
@@ -104,4 +104,8 @@ body{
 
 a  {
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }

@@ -15,6 +15,8 @@
 								$product_price = $cart_item['product_price'];
 								$product_id = $cart_item['product_id'];
 								
+								$total = $total + $cart_item['product_price'];
+								
 								echo '<tr>';
 									echo '<td>';
 										echo 'Quantity <input type="text" size="2" maxlength="2" name="product_quantity['.$product_id.']" value="'.$product_quantity.'" />';
@@ -25,11 +27,19 @@
 									echo '<td>';
 										echo '<input type="checkbox" name="remove_id[]" value="'.$product_id.'" /> Remove';
 									echo '</td>';
+								echo '</tr>';
 							}
-							echo '<td colspan="4">';
+							echo '<tr>';
+								echo '<td colspan="4">';
+									echo 'Total: '.$total;
+								echo '</td>';
+							echo '</tr>';
+							echo '<tr>';
+								echo '<td colspan="4">';
 								//echo '<button type="submit">Update</button><a href="include/view_cart.php" class="button">Checkout</a>';
-								echo '<input type="submit" name="Update" value="Update"/><a href="index.php?page=checkout" class="button">Checkout</a>';
-							echo '</td>';
+									echo '<input type="submit" name="Update" value="Update"/><a href="index.php?page=checkout" class="button">Checkout</a>';
+								echo '</td>';
+							echo '</tr>';
 						echo '</tbody>';
 					echo '</table>';
 				echo '</form>';
