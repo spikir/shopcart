@@ -43,6 +43,10 @@
 				include ("fillform.php");
 				break;
 				
+			case 'invalidemail';
+				include ("invalid_email.php");
+				break;
+				
 			case 'home';
 				include ('home.php');
 				break;
