@@ -10,27 +10,27 @@
 		mysqli_stmt_execute($stmt);
 		mysqli_stmt_bind_result($stmt, $product_name, $product_price, $order_id, $order_date);
 		
-		if($order_id) {
-			echo '<table>';
-				while (mysqli_stmt_fetch($stmt)) {
-					echo '<tr>';
-						echo '<td>';
-							echo $order_id;
-						echo '</td>';
-						echo '<td>';
-							echo $order_date;
-						echo '</td>';
-						echo '<td>';
-							echo $product_name;
-						echo '</td>';
-						echo '<td>';
-							echo $product_price;
-						echo '</td>';
-					echo '</tr>';
-				}
-			echo '</table>';
-		} else {
-			echo '<p>You dont have any orders</p>';
+		echo '<table>';
+			while (mysqli_stmt_fetch($stmt)) {
+				echo '<tr>';
+					echo '<td>';
+						echo $order_id;
+					echo '</td>';
+					echo '<td>';
+						echo $order_date;
+					echo '</td>';
+					echo '<td>';
+						echo $product_name;
+					echo '</td>';
+					echo '<td>';
+						echo $product_price;
+					echo '</td>';
+				echo '</tr>';
+			}
+		echo '</table>';
+		
+		if(!$order_id) {
+			echo '<p>You dont have any orders</p>';		
 		}
 	}
 	
