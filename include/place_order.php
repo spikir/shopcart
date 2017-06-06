@@ -3,7 +3,6 @@
 	session_start();
 	
 	if($_SESSION['user_id']) {	
-		echo 'test';
 		foreach($_SESSION['cart_products'] as $cart_item) {
 			$product_id = $cart_item['product_id'];
 			$user_id = $_SESSION['user_id'];
@@ -15,7 +14,7 @@
 			$result = mysqli_query($conn, $query_create_product);*/
 		}
 		unset($_SESSION['cart_products']);
-		//Header ("Location: ../index.php?page=home");
+		Header ("Location: ../index.php?page=home");
 	} else {
 		Header ("Location: ../index.php?page=login");
 	}
